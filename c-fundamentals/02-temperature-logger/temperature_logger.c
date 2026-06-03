@@ -16,6 +16,8 @@ int main (){
     float highest_temperature = 0.00;
     float lowest_temperature = 0.00;
     float average_temperature = 0.00;
+    float max_temp = temperatures[0];
+    float min_temp = temperatures[0];
 
     int current_loop = 0;
     //char days[NO_OF_DAYS] = {"Mon", "Tue", "Wed", "Thur", "Fri", "Sart", "Sun"};
@@ -27,8 +29,17 @@ int main (){
         temperatures[current_loop] = user_input;
         current_loop++;
 
-    }
+    };
 
+    for ( int i = 0; i < NO_OF_DAYS; i++){
+        if(temperatures[i] > max_temp ){
+            max_temp = temperatures[i];
+        };
+        if (temperatures[i] < min_temp){
+           min_temp = temperatures[i];
+        };
+        
+    };
 
 
 
