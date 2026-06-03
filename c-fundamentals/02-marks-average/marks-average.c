@@ -28,4 +28,5 @@ int main(){
     float average = marks_total/MAX_SIZE;
     printf("The resuls average is: %.2f \n", average);
 
+
 }

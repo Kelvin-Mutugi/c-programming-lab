@@ -1,0 +1,1 @@
+A collection of C programs i built while learning the language covering arrays, loops, functions, pointers, and file I/O.
