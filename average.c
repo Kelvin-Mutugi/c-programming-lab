@@ -2,7 +2,6 @@
 #define MAX_SIZE 5
 //Develop a program in C that prompts a user to enter marks for 
 //five subjects.
-//[20,39,26,25,28,28]
 //using marks array.
 //the program uses loop to prompt the user to enter marks for each
 //subject and stores them in the array.
@@ -12,12 +11,21 @@
 int main(){
     int marks[MAX_SIZE];
     int current_size = 0;
-    int user_input;
+    int user_input = 0;
+    float average = 0.00;
 
     while (current_size < MAX_SIZE){
-        printf('Enter Your marks');
+        printf("Enter Your marks for subject %d: ", current_size + 1);
+        scanf("%d", &user_input);
+        marks[current_size] = user_input;
+        current_size++;
+    };
+
+    for (int i = 0; i < MAX_SIZE; i++){
+        printf("%d \n", marks[i]);
+        
+
     }
+    
 
-
-    return(0);
 }
