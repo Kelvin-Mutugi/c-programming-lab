@@ -12,7 +12,7 @@ int main(){
     int marks[MAX_SIZE];
     int current_size = 0;
     int user_input = 0;
-    float average = 0.00;
+    float marks_total = 0;
 
     while (current_size < MAX_SIZE){
         printf("Enter Your marks for subject %d: ", current_size + 1);
@@ -22,10 +22,10 @@ int main(){
     };
 
     for (int i = 0; i < MAX_SIZE; i++){
-        printf("%d \n", marks[i]);
-        
-
+        marks_total += marks[i];
     }
-    
+
+    float average = marks_total/MAX_SIZE;
+    printf("The resuls average is: %.2f \n", average);
 
 }
