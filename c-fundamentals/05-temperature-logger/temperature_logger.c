@@ -4,10 +4,10 @@
 
 /*
 Temperature Logger
-Develop a program that prompts the user to enter temperature readings for 7 days. Using a temperatures array,
-store each reading via a loop. Compute and display the highest, lowest, and average temperature,
-each to two decimal places.
+Develop a program that prompts the user to enter temperature readings for 7 days. Using a temperatures array, store each reading via a loop.
+Compute and display the highest, lowest, and average temperature, each to two decimal places.
 */
+
 
 int main (){
 

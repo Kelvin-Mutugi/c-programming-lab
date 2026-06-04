@@ -1,12 +1,13 @@
 #include  <stdio.h>
 #define MAX_SIZE 5
-//Develop a program in C that prompts a user to enter marks for 
-//five subjects.
-//using marks array.
-//the program uses loop to prompt the user to enter marks for each
-//subject and stores them in the array.
-//It then computes the average and displays the result as
-//two decimal point value
+#define MAX_MARKS 2
+
+/*Develop a program in C that prompts a user to enter marks for five subjects. using marks array.
+the program uses loop to prompt the user to enter marks for each
+subject and stores them in the array.
+It then computes the average and displays the result as
+two decimal point value
+*/
 
 int main(){
     int marks[MAX_SIZE];
@@ -17,8 +18,14 @@ int main(){
     while (current_size < MAX_SIZE){
         printf("Enter Your marks for subject %d: ", current_size + 1);
         scanf("%d", &user_input);
-        marks[current_size] = user_input;
-        current_size++;
+        if (user_input > 99){
+            printf("Marks can only be less than 2 digits \n");
+        }
+        else{
+            marks[current_size] = user_input;
+            current_size++;
+        }
+        
     };
 
     for (int i = 0; i < MAX_SIZE; i++){
