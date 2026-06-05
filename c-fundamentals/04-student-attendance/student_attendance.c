@@ -5,7 +5,7 @@ Using an attendance array and a loop, compute and display the class average atte
 */
 
 #include <stdio.h>
-#define NO_OF_STUDENTS 3
+#define NO_OF_STUDENTS 10
 #define SHOOL_DAYS 30
 
 int main(){
