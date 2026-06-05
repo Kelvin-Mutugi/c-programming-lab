@@ -30,8 +30,8 @@ int main(){
         total_attendance += attendance[i];
     }
 
-    average_attendance = (total_attendance/SHOOL_DAYS) * 100;
-    printf("Average attendance of the class %.2f: \n" average_attendance);
+    average_attendance = ((float)total_attendance / (NO_OF_STUDENTS * SHOOL_DAYS)) * 100;
+    printf("Average attendance of the class: %.2f %\n", average_attendance);
 
 
     return(0);
