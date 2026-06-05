@@ -9,19 +9,31 @@ Using an attendance array and a loop, compute and display the class average atte
 #define SHOOL_DAYS 30
 
 int main(){
-    int attendance[NO_OF_STUDENTS];
+    int attendance[NO_OF_STUDENTS] = {0};
     float average_attendance = 0.00;
-    int current_day = 0;
+    int current_student = 0;
+    int user_input;
+    int total_attendance = 0;
 
-    printf("ENTER THE ATTENDANCE");
-    while (current_day < SHOOL_DAYS){
-        printf("student %d", current_day + 1);
+    printf("ENTER THE ATTENDANCE \n");
+    while (current_student < NO_OF_STUDENTS){
+        printf("student %d: ", current_student + 1);
+        scanf("%d", &user_input);
 
+        attendance[current_student] = user_input;
+
+        current_student++;
     }
 
 
+    for (int i = 0; i < NO_OF_STUDENTS; i++){
+        total_attendance += attendance[i];
+    }
+
+    average_attendance = (total_attendance/SHOOL_DAYS) * 100;
+    printf("Average attendance of the class %.2f: \n" average_attendance);
 
 
     return(0);
-    
+
 }
