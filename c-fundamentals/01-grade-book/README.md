@@ -1,7 +1,3 @@
-Here's your next project — same Stage 1 concepts but with more moving parts:
-
----
-
 **Student Grade Book**
 
 Develop a program in C that manages marks for a class of **5 students**, each with **4 subjects**.
