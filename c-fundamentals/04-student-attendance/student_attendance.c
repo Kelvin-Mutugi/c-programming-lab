@@ -19,6 +19,7 @@ int main(){
     while (current_student < NO_OF_STUDENTS){
         printf("student %d: ", current_student + 1);
         scanf("%d", &user_input);
+        
         if (user_input <= SHOOL_DAYS){
             attendance[current_student] = user_input;
             current_student++;
@@ -26,7 +27,6 @@ int main(){
         else{
             printf("Entry exceeds number of shool days \n");
         }
-
         
     }
 
