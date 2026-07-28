@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/kelvinmutugi/projects/C_programmes/c-fundamentals/pattern",
-      "program": "/home/kelvinmutugi/projects/C_programmes/c-fundamentals/pattern/build/Debug/outDebug",
+      "cwd": "/home/kelvinmutugi/projects/C_programmes/algos",
+      "program": "/home/kelvinmutugi/projects/C_programmes/algos/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
